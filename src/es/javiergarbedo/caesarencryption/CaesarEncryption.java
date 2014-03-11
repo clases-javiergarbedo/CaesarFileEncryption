@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package es.javiergarbedo.caesarcipher;
+package es.javiergarbedo.caesarencryption;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -30,7 +30,7 @@ import java.io.IOException;
  * @version 0.0.1
  * @date 2014-03-10
  */
-public class CaesarCipher {
+public class CaesarEncryption {
 
     //Desplazamiento que se aplicará a cada caracter
     private int offset;
@@ -41,7 +41,7 @@ public class CaesarCipher {
      *
      * @param offset Desplazamiento que se aplicará a cada caracter
      */
-    public CaesarCipher(int offset) {
+    public CaesarEncryption(int offset) {
         this.offset = offset;
     }
 

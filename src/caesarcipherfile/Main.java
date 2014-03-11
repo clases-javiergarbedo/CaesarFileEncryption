@@ -16,7 +16,7 @@
  */
 package caesarcipherfile;
 
-import es.javiergarbedo.caesarcipher.CaesarCipher;
+import es.javiergarbedo.caesarencryption.CaesarEncryption;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -45,7 +45,7 @@ public class Main extends javax.swing.JFrame {
             //Obtener el desplazamiento que se aplicará a cada caracter para 
             //  usarlo en la codificación
             int offset = (int) jSpinnerOffset.getValue();
-            CaesarCipher caesarCipher = new CaesarCipher(offset);
+            CaesarEncryption caesarCipher = new CaesarEncryption(offset);
             //Obtener la referencia al archivo a procesar
             String fileName = jTextFieldInputFileName.getText();
             File inputFile = new File(fileName);
